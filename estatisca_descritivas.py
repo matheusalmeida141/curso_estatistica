@@ -20,8 +20,12 @@ q3 = df["qtdPontos"].quantile(0.75)
 
 maximo = df["qtdPontos"].max()
 
-print(f"minimo: {minimo} \nmedia: {media} \n \
-      1q: {q1} \n mediana: {mediana} \n 3q: {q3} \nmax:{maximo}")
+varianca = df["qtdPontos"].var()
+
+desvio = df["qtdPontos"].std()
+
+print(f"minimo: {minimo} \nmedia: {media} \n\
+      1q: {q1} \nmediana: {mediana} \n 3q: {q3} \nmax:{maximo} \nvarianca: {varianca} \ndesvio:{desvio}")
 
 
 # %%
